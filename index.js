@@ -38,10 +38,10 @@ var people = project.committee
 var steps = project.steps
 i = 0
   steps.forEach(function(step){
-    if (i < 3){
+    if (i < people.length){
       step.person = people[i]
       i++
-      if (i > 2){
+      if (i >= people.length){
         i = 0
       }
     }
